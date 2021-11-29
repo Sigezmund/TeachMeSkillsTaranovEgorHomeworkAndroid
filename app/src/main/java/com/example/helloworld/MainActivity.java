@@ -24,5 +24,6 @@ Button btnApp1,btnApp2,btnApp3,btnApp4;
                 startActivity(intent);
             }
         });
+
     }
 }

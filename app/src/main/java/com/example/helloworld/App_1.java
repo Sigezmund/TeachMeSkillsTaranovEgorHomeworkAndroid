@@ -29,6 +29,7 @@ EditText editText;
                 }
                 editText.setText(resultText);
             }
+
         });
     }
 }
