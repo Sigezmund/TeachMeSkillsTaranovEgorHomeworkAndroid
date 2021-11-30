@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloWorld">
         <activity
+            android:name=".App_4"
+            android:exported="false" />
+        <activity
+            android:name=".App_3"
+            android:exported="false" />
+        <activity
             android:name=".App_2"
             android:exported="false" />
         <activity

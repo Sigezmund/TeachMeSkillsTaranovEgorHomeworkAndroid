@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">HelloWorld</string>
+    <string name="zag_1">Без окон, без дверей, полна жопа огурцов?</string>
+    <string name="zag_2">Два кольца, два конца,по середине гвоздик?</string>
+    <string name="zag_3">Кто ее раздевает,тот слезы проливает?</string>
+    <string name="otv_zag_1">da</string>
+    <string name="otv_zag_2">nojnicy</string>
+    <string name="otv_zag_3">lukovica</string>
 </resources>
