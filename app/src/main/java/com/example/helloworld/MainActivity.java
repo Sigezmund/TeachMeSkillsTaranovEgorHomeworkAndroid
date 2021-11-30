@@ -26,4 +26,8 @@ Button btnApp1,btnApp2,btnApp3,btnApp4;
         });
 
     }
+    public void onClickbtnApp2(View view){
+        Intent intent=new Intent(MainActivity.this,App_2.class);
+        startActivity(intent);
+    }
 }
