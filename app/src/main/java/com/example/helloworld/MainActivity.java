@@ -39,5 +39,6 @@ Button btnApp1,btnApp2,btnApp3,btnApp4;
     public void onClickbtnApp4(View view){
         Intent intent=new Intent(MainActivity.this,App_4.class);
         startActivity(intent);
+
     }
 }
