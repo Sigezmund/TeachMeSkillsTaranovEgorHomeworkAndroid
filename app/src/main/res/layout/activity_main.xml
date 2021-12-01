@@ -4,48 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="100dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="199dp"
-        android:text="конвектор фраз"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="100dp"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="60dp"
-        android:onClick="onClickbtnApp2"
-        android:text="магический шар"
-        app:layout_constraintStart_toStartOf="@+id/button1"
-        app:layout_constraintTop_toBottomOf="@+id/button1" />
+        <Button
+            android:id="@+id/button4"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickbtnApp4"
+            android:text="Калькулятор" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="71dp"
-        android:onClick="onClickbtnApp3"
-        android:text="Загадочки"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
-        app:layout_constraintEnd_toEndOf="@+id/button4" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickbtnApp3"
+            android:text="Загадочки" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="137dp"
-        android:onClick="onClickbtnApp4"
-        android:text="App4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickbtnApp2"
+            android:text="магический шар" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="конвектор фраз" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
