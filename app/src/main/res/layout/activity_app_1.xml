@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="116dp"
         android:layout_marginEnd="52dp"
-        android:text="Button"
+        android:text="Refactor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

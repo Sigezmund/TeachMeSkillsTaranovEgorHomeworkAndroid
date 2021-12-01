@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class App_3 extends AppCompatActivity {
 TextView tvZagadka,tvItog;
+    ImageView imageView;
 EditText edOtvet;
 int counter=0;
     @Override
@@ -17,6 +19,7 @@ int counter=0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_app3);
         tvZagadka=findViewById(R.id.tvZagadka);
+        imageView=findViewById(R.id.imVerno);
         tvItog=findViewById(R.id.tvItog);
         edOtvet=findViewById(R.id.edOtvet);
     }
@@ -28,22 +31,27 @@ int counter=0;
       switch (counter){
           case 1:if(edOtvet.getText().toString().equals(txt1)){
               tvItog.setText("Все верно!");
-          }else {tvItog.setText("не правильно!Подумайте ещё!");
+              imageView.setVisibility(View.VISIBLE);
+          }else {tvItog.setText("не правильно!Подумайте ещё!");imageView.setVisibility(View.GONE);
           }
           break;
           case 2:if(edOtvet.getText().toString().equals(txt2)){
               tvItog.setText("Все верно!");
-          }else {tvItog.setText("не правильно! Подумайте ещё!");
+              imageView.setVisibility(View.VISIBLE);
+          }else {tvItog.setText("не правильно! Подумайте ещё!");imageView.setVisibility(View.GONE);
           }
               break;
           case 3:if(edOtvet.getText().toString().equals(txt3)){
               tvItog.setText("Все верно!");
-          }else {tvItog.setText("не правильно!Подумайте ещё!");
+              imageView.setVisibility(View.VISIBLE);
+          }else {tvItog.setText("не правильно!Подумайте ещё!");imageView.setVisibility(View.GONE);
           }
               break;
       }
     }
     public  void onBtnNovZagClick(View view){
+        tvItog.setText("Ваш результат");
+        imageView.setVisibility(View.GONE);
 int a=(int)(Math.random()*3);
    switch (a){
        case 0:tvZagadka.setText(R.string.zag_1);
